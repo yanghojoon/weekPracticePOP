@@ -16,13 +16,13 @@ struct MacBook {
         if permittedChargingWatt < charger.maximumWattPerHour {
             let requiredChargeWatt =  maximumChargingContainer - currentChargingContainer
             let chargingHour = requiredChargeWatt / permittedChargingWatt
-            print(chargingHour)
+            print("충전에 걸린 시간: \(chargingHour)시간")
         }
         
         guard permittedChargingWatt < charger.maximumWattPerHour else {
             let requiredChargeWatt =  maximumChargingContainer - currentChargingContainer
             let chargingHour = requiredChargeWatt / charger.maximumWattPerHour
-            print(chargingHour)
+            print("충전에 걸린 시간: \(chargingHour)시간")
             
             return
         }
@@ -32,3 +32,6 @@ struct MacBook {
         print(chargingHour)
     }
 }
+
+var macbook = MacBook(permittedChargingWatt: 80, currentChargingContainer: 20)
+

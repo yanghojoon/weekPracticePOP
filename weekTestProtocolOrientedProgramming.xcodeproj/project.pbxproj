@@ -10,6 +10,7 @@
 		DE54E9A6277724C900E657FF /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE54E9A5277724C900E657FF /* main.swift */; };
 		DE54E9AD2777251F00E657FF /* Chargerable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE54E9AC2777251F00E657FF /* Chargerable.swift */; };
 		DE54E9B12777258D00E657FF /* Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE54E9B02777258D00E657FF /* Int.swift */; };
+		DE54E9B32777284C00E657FF /* MacBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE54E9B22777284C00E657FF /* MacBook.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,6 +30,7 @@
 		DE54E9A5277724C900E657FF /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		DE54E9AC2777251F00E657FF /* Chargerable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chargerable.swift; sourceTree = "<group>"; };
 		DE54E9B02777258D00E657FF /* Int.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Int.swift; sourceTree = "<group>"; };
+		DE54E9B22777284C00E657FF /* MacBook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacBook.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				DE54E9AF2777257600E657FF /* Protocol */,
 				DE54E9AE2777256400E657FF /* Typealias */,
 				DE54E9A5277724C900E657FF /* main.swift */,
+				DE54E9B22777284C00E657FF /* MacBook.swift */,
 			);
 			path = weekTestProtocolOrientedProgramming;
 			sourceTree = "<group>";
@@ -142,6 +145,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE54E9B32777284C00E657FF /* MacBook.swift in Sources */,
 				DE54E9B12777258D00E657FF /* Int.swift in Sources */,
 				DE54E9AD2777251F00E657FF /* Chargerable.swift in Sources */,
 				DE54E9A6277724C900E657FF /* main.swift in Sources */,

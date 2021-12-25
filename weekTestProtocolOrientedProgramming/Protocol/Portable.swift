@@ -7,4 +7,6 @@
 
 import Foundation
 
-protocol Portable {}
+protocol Portable {
+    var name: String { get }
+}

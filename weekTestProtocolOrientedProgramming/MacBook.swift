@@ -8,6 +8,7 @@
 import Foundation
 
 struct MacBook: Portable {
+    let name: String = "맥북"
     let permittedChargingWatt: Watt
     var currentChargingContainer: Watt
     let maximumChargingContainer: Watt = 100

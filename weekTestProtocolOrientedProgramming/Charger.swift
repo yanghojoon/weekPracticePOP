@@ -22,5 +22,5 @@ struct Charger: Chargerable {
 let appleWatchCharger = Charger(maximumWattPerHour: 5)
 let iPhoneCharger = Charger(maximumWattPerHour: 18)
 let iPadCharger = Charger(maximumWattPerHour: 30)
-let MacBookCharger = Charger(maximumWattPerHour: 96)
-let FastMacBookCharger = Charger(maximumWattPerHour: 106)
+let macBookCharger = Charger(maximumWattPerHour: 96)
+let fastMacBookCharger = Charger(maximumWattPerHour: 106)

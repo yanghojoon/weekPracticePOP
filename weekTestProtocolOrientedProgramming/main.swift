@@ -8,4 +8,11 @@
 import Foundation
 
 macbook.chargeBattery(charger: FastMacBookCharger)
+macbook.chargeBattery(charger: appleWatchCharger)
+macbook.chargeBattery(charger: iPhoneCharger)
+macbook.chargeBattery(charger: iPadCharger)
+macbook.chargeBattery(charger: MacBookCharger)
+
+
+
 

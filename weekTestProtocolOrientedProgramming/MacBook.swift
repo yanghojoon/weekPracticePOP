@@ -9,16 +9,26 @@ import Foundation
 
 struct MacBook {
     let permittedChargingWatt: Watt
-    var currentCharger: Watt
-    let maximumCharger: Watt = 100
+    var currentChargingContainer: Watt
+    let maximumChargingContainer: Watt = 100
     
-    func chargeBattery(charger: Chargerable) {
-        let startTime: CFAbsoluteTime = CFAbsoluteTimeGetCurrent()
+    mutating func chargeBattery(charger: Chargerable) {
+        if permittedChargingWatt < charger.maximumWattPerHour {
+            let requiredChargeWatt =  maximumChargingContainer - currentChargingContainer
+            let chargingHour = requiredChargeWatt / permittedChargingWatt
+            print(chargingHour)
+        }
         
+        guard permittedChargingWatt < charger.maximumWattPerHour else {
+            let requiredChargeWatt =  maximumChargingContainer - currentChargingContainer
+            let chargingHour = requiredChargeWatt / charger.maximumWattPerHour
+            print(chargingHour)
+            
+            return
+        }
         
-        
-        let endTime: CFAbsoluteTime = CFAbsoluteTimeGetCurrent()
-        let duration = endTime - startTime
-        print(duration)
+        let requiredChargeWatt =  maximumChargingContainer - currentChargingContainer
+        let chargingHour = requiredChargeWatt / permittedChargingWatt
+        print(chargingHour)
     }
 }

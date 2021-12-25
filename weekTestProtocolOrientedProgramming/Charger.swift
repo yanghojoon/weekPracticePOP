@@ -7,16 +7,8 @@
 
 import Foundation
 
-struct Charger: Chargerable {
-    var maximumWattPerHour: WattPerHour
-    
-    func convert(chargerableWattPerHour: WattPerHour) -> WattPerHour {
-        guard maximumWattPerHour < chargerableWattPerHour else {
-            return chargerableWattPerHour
-        }
-        
-        return maximumWattPerHour
-    }
+struct Charger: Chargerable, Portable {
+    let maximumWattPerHour: WattPerHour
 }
 
 let appleWatchCharger = Charger(maximumWattPerHour: 5)

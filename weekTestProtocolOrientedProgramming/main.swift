@@ -7,12 +7,13 @@
 
 import Foundation
 
-macbook.chargeBattery(charger: FastMacBookCharger)
+macbook.chargeBattery(charger: fastMacBookCharger)
 macbook.chargeBattery(charger: appleWatchCharger)
 macbook.chargeBattery(charger: iPhoneCharger)
 macbook.chargeBattery(charger: iPadCharger)
-macbook.chargeBattery(charger: MacBookCharger)
+macbook.chargeBattery(charger: macBookCharger)
 
+gucciBag.put(item: macbook)
+gucciBag.put(item: appleWatchCharger)
 
-
-
+gucciBag.introduceBag()

@@ -12,6 +12,9 @@
 		DE54E9B12777258D00E657FF /* Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE54E9B02777258D00E657FF /* Int.swift */; };
 		DE54E9B32777284C00E657FF /* MacBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE54E9B22777284C00E657FF /* MacBook.swift */; };
 		DE54E9B527772A3500E657FF /* Charger.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE54E9B427772A3500E657FF /* Charger.swift */; };
+		DE54E9B72777371000E657FF /* Portable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE54E9B62777371000E657FF /* Portable.swift */; };
+		DE54E9B92777373300E657FF /* Bag.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE54E9B82777373300E657FF /* Bag.swift */; };
+		DE54E9BB2777420B00E657FF /* Containable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE54E9BA2777420B00E657FF /* Containable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -33,6 +36,9 @@
 		DE54E9B02777258D00E657FF /* Int.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Int.swift; sourceTree = "<group>"; };
 		DE54E9B22777284C00E657FF /* MacBook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacBook.swift; sourceTree = "<group>"; };
 		DE54E9B427772A3500E657FF /* Charger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Charger.swift; sourceTree = "<group>"; };
+		DE54E9B62777371000E657FF /* Portable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Portable.swift; sourceTree = "<group>"; };
+		DE54E9B82777373300E657FF /* Bag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bag.swift; sourceTree = "<group>"; };
+		DE54E9BA2777420B00E657FF /* Containable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Containable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +76,7 @@
 				DE54E9A5277724C900E657FF /* main.swift */,
 				DE54E9B22777284C00E657FF /* MacBook.swift */,
 				DE54E9B427772A3500E657FF /* Charger.swift */,
+				DE54E9B82777373300E657FF /* Bag.swift */,
 			);
 			path = weekTestProtocolOrientedProgramming;
 			sourceTree = "<group>";
@@ -86,6 +93,8 @@
 			isa = PBXGroup;
 			children = (
 				DE54E9AC2777251F00E657FF /* Chargerable.swift */,
+				DE54E9B62777371000E657FF /* Portable.swift */,
+				DE54E9BA2777420B00E657FF /* Containable.swift */,
 			);
 			path = Protocol;
 			sourceTree = "<group>";
@@ -148,8 +157,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE54E9B72777371000E657FF /* Portable.swift in Sources */,
 				DE54E9B32777284C00E657FF /* MacBook.swift in Sources */,
+				DE54E9B92777373300E657FF /* Bag.swift in Sources */,
 				DE54E9B527772A3500E657FF /* Charger.swift in Sources */,
+				DE54E9BB2777420B00E657FF /* Containable.swift in Sources */,
 				DE54E9B12777258D00E657FF /* Int.swift in Sources */,
 				DE54E9AD2777251F00E657FF /* Chargerable.swift in Sources */,
 				DE54E9A6277724C900E657FF /* main.swift in Sources */,

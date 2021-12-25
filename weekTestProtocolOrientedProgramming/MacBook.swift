@@ -7,29 +7,15 @@
 
 import Foundation
 
-struct MacBook {
+struct MacBook: Portable {
     let permittedChargingWatt: Watt
     var currentChargingContainer: Watt
     let maximumChargingContainer: Watt = 100
     
     mutating func chargeBattery(charger: Chargerable) {
-        if permittedChargingWatt < charger.maximumWattPerHour {
-            let requiredChargeWatt =  maximumChargingContainer - currentChargingContainer
-            let chargingHour = requiredChargeWatt / permittedChargingWatt
-            print("충전에 걸린 시간: \(chargingHour)시간")
-        }
-        
-        guard permittedChargingWatt < charger.maximumWattPerHour else {
-            let requiredChargeWatt =  maximumChargingContainer - currentChargingContainer
-            let chargingHour = requiredChargeWatt / charger.maximumWattPerHour
-            print("충전에 걸린 시간: \(chargingHour)시간")
-            
-            return
-        }
-        
         let requiredChargeWatt =  maximumChargingContainer - currentChargingContainer
-        let chargingHour = requiredChargeWatt / permittedChargingWatt
-        print(chargingHour)
+        let chargingHour = requiredChargeWatt / charger.convert(chargerableWattPerHour: permittedChargingWatt)
+        print("충전에 걸린 시간: \(chargingHour)시간")
     }
 }
 
